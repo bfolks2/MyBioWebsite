@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <h2>About Me</h2>
+
+  <div class="jumbotron">
+    <p>With nearly 5 years professional experience in an Applications-Software Engineer position,
+      I've gained several universal skills aside from what is listed on my resume.
+      I've dealt directly with hundreds of customers, individually and in group seminars.
+      As a result, I've been able to build up my public and professional speaking skills.
+      I've become accustomed to learning about an application for the first time,
+      and then creating a solution for it within the same week or even day.</p>
+  </div>
+
+  <h3><strong>Full Stack Skills:</strong></h3>
+    <ul>
+      {% for skill in skills %}
+        {% if not skill.pro %}
+        <div class="listitem">
+          <li><p><a href="{% url 'mainapp:details' slug=skill.slug %}">{{skill.name}}</a></p></li>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  <h3><strong>Professional Experience:</strong></h3>
+  <ul>
+    {% for skill in skills %}
+      {% if skill.pro %}
+      <div class="listitem">
+        <li><p><a href="{% url 'mainapp:details' slug=skill.slug %}">{{skill.name}}</a></p></li>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+  <div class="padding">
+    <h1><strong>The Ben Folks Experience</strong></h1>
+
+
+    <div class="row startsection">
+
+      <div class="col-md-6 col-xs-12">
+        <a href="#">
+          <img class="img-circle" src="{% static 'mainproj/misc/mypicture1.jpg' %}"
+          alt="Error loading content.  Surely you don't blame the site developer."/>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-xs-12">
+
+        <div class="greeting">
+          <p>For the select few of you who arrived at this website intentionally, my name is Ben Folks,
+          and I am an experienced software developer.</p>
+        </div>
+
+        <div class="caption">
+          <p>For the remaining majority, I think you meant to go here:
+            <a href="https://www.benfolds.com/">www.benfol<strong>d</strong>s.com</a></p>
+        </div>
+
+        <div class="greeting">
+          <p>I graduated in 2011 from the University of Illinois at Urbana-Champaign
+          with a Bachelor of Science in Engineering.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="sectionheader">
+      <p>About the Site</p>
+    </div>
+
+    <div class="intro">
+
+      <p>Nowadays, in the era of Facebook, Instagram, and LinkedIn, there is no shortage of personal profile sites that can
+      be found online.  At times, it seems as though an unending pestilence of them are mercilessly being spewed across the World Wide Web.
+      In a poetic sort of irony, each profile is built by someone who, in a futile attempt to separate him/herself from the rest of the pack,
+      ends up creating the same brand of content as everyone else.  A grim state of affairs indeed...</p>
+
+      <p>This website, of course, will be no exception!!! </p>
+
+      <p>It is my own attempt to cram one more self-congratulatory bio page into the Internet's already bloated warehouse
+      of contrived personal profiles.  So feel free to look around at this site's <em>vast</em> array of content.
+      There are literally dozens of lines worth of information!</p>
+
+    </div>
+
+    <div class="sectionheader">
+      <p>Why You Should Hire Me</p>
+    </div>
+
+    <div class="intro">
+    <p>Over the last several years, I have worked as an engineer/developer for a small software company.
+    During this time, I learned how to program in several languages, for an array of applications
+    (see the <a href="{% url 'mainapp:list' %}">About Me</a> section for more details).
+    This relatively (extremely) modest website was built by me from the ground up, with an assist from Bootstrap,
+    using as many relevant aspects of Full Stack Development as possible.  A link to this site's
+    the source code, stored on GitHub, can be found <a href="{% url 'mainapp:documents' %}">here</a>.
+    About the only thing I couldn't find a great use for on this particular site was jQuery/Javascript,
+    so as an excuse to use them both, I created the random "Inspirational Quote Generator" you can see below.  Enjoy!</p>
+    </div>
+
+    <div class="inspire">
+      <button class="btn btn-default" type="button">Insta-Inspiration</button>
+    </div>
+
+    <h3 class="quote">-Click the button above to be inspired-</h3>
+
+    <div class="copyright">
+      <p>© 2017 <br>
+      Ben Folks and Associates</p>
+    </div>
+
+  </div>
+
+
+{% endblock %}
