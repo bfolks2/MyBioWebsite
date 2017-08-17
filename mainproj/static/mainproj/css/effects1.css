@@ -2,6 +2,10 @@
   background-color: #253247;
 }
 
+.title{
+  font-family: 'Permanent Marker', cursive;
+}
+
 .jumbotron{
   padding-top: 23px;
   padding-bottom: 10px;
