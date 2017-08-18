@@ -26,11 +26,11 @@
 }
 
 .navbar-collapse .navbar-nav li a:hover{
-  color: #5add70;
+  color: #bdbfc1;
 }
 
 .navbar-header .navbar-toggle:hover {
-  background-color: #5add70;
+  background-color: #bdbfc1;
 }
 
 .fa{
@@ -84,7 +84,7 @@
 }
 
 .glyphicon:hover{
-  color: #acdd5a;
+  color: #c4bf97;
 }
 
 .sectionheader{
