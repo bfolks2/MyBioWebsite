@@ -29,6 +29,10 @@
   color: #5add70;
 }
 
+.navbar-header .navbar-toggle:hover {
+  background-color: #5add70;
+}
+
 .fa{
   font-size: 25px;
 }
