@@ -25,6 +25,10 @@
   text-align: center;
 }
 
+.navbar-collapse .navbar-nav li a:hover{
+  color: #5add70;
+}
+
 .fa{
   font-size: 25px;
 }
@@ -73,6 +77,10 @@
 
 .glyphicon{
   color: #f9f493;
+}
+
+.glyphicon:hover{
+  color: #acdd5a;
 }
 
 .sectionheader{
