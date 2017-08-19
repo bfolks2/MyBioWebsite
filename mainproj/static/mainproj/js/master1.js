@@ -1,8 +1,8 @@
 var inspirebutton = $('.btn-default')
 var quotetext = $('.quote')
-var randnum = 0
-var prevrandnum = 0
+var numlist = []
 var numquotes = 18
+var randnum = 1
 
 var newCSS = {
   'font-style':'italic',
@@ -10,13 +10,20 @@ var newCSS = {
 
 inspirebutton.on('click',function()
   {
-    // While loop to make sure the same quote is never repeated
-    while(randnum == prevrandnum)
+    randnum = Math.floor((Math.random() * numquotes) + 1)
+
+    // While loop to make sure the same quote is never repeated until all are done
+    while(numlist.indexOf(randnum)>-1)
     {
       randnum = Math.floor((Math.random() * numquotes) + 1)
     }
 
-    prevrandnum=randnum
+    numlist.push(randnum)
+
+    // Reset array and start over once all quotes are used
+    if (numlist.length == numquotes){
+      numlist=[]
+    }
 
     quotetext.text(getQuote(randnum)).css(newCSS)
     window.scrollTo(0,500)
