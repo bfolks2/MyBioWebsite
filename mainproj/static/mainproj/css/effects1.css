@@ -119,6 +119,10 @@
   border-radius: 5%;
 }
 
+.footer{
+  background: linear-gradient(#f9f9f9,#81a3db)
+}
+
 .copyright{
   font-size: 0.85em;
   font-style: italic;
