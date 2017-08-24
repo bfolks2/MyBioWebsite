@@ -26,7 +26,7 @@ inspirebutton.on('click',function()
     }
 
     quotetext.text(getQuote(randnum)).css(newCSS)
-    window.scrollTo(0,500)
+    window.scrollTo(0,1000)
   }
 )
 
