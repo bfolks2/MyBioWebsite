@@ -79,6 +79,11 @@
   padding-right: 3.0em;
 }
 
+.main{
+  padding-top: 25px;
+  background-color: #e3e8ed;
+}
+
 .glyphicon{
   color: #f9f493;
 }
@@ -120,7 +125,7 @@
 }
 
 .footer{
-  background: linear-gradient(#f9f9f9,#81a3db)
+  background: linear-gradient(#e3e8ed,#81a3db)
 }
 
 .copyright{

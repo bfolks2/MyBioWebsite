@@ -42,42 +42,51 @@
       </div>
 
     </div>
-
-    <div class="sectionheader">
-      <p>About the Site</p>
-    </div>
-
-    <div class="intro">
-
-      <p>Nowadays, in the era of Facebook, Instagram, and LinkedIn, there is no shortage of personal profile sites that can
-      be found online.  At times, it seems as though an unending pestilence of them are mercilessly being spewed across the World Wide Web.
-      In a poetic sort of irony, each profile is built by someone who, in a futile attempt to separate him/herself from the rest of the pack,
-      ends up creating the same brand of content as everyone else.  A grim state of affairs indeed...</p>
-
-      <p>This website, of course, will be no exception!!! </p>
-
-      <p>It is my own attempt to cram one more self-congratulatory bio page into the Internet's already bloated warehouse
-      of contrived personal profiles.  So feel free to look around at this site's <em>vast</em> array of content.
-      There are literally dozens of lines worth of information!</p>
-
-    </div>
-
-    <div class="sectionheader">
-      <p>Why You Should Hire Me</p>
-    </div>
-
-    <div class="intro">
-    <p>Over the last several years, I have worked as an engineer/developer for a small software company.
-    During this time, I learned how to program in several languages, for an array of applications
-    (see the <a href="{% url 'mainapp:list' %}">About Me</a> section for more details).
-    This relatively (extremely) modest website was built by me from the ground up, with an assist from Bootstrap,
-    using as many relevant aspects of Full Stack Development as possible.  A link to this site's
-    the source code, stored on GitHub, can be found <a href="{% url 'mainapp:documents' %}">here</a>.
-    About the only thing I couldn't find a great use for on this particular site was jQuery/Javascript,
-    so as an excuse to use them both, I created the random "Inspirational Quote Generator" you can see below.  Enjoy!</p>
-    </div>
-
   </div>
+
+{% endblock %}
+
+{% block mainproj %}
+
+  <div class="main">
+    <div class="container padding">
+
+      <div class="sectionheader">
+        <p>About the Site</p>
+      </div>
+
+      <div class="intro">
+
+        <p>Nowadays, in the era of Facebook, Instagram, and LinkedIn, there is no shortage of personal profile sites that can
+        be found online.  At times, it seems as though an unending pestilence of them are mercilessly being spewed across the World Wide Web.
+        In a poetic sort of irony, each profile is built by someone who, in a futile attempt to separate him/herself from the rest of the pack,
+        ends up creating the same brand of content as everyone else.  A grim state of affairs indeed...</p>
+
+        <p>This website, of course, will be no exception!!! </p>
+
+        <p>It is my own attempt to cram one more self-congratulatory bio page into the Internet's already bloated warehouse
+        of contrived personal profiles.  So feel free to look around at this site's <em>vast</em> array of content.
+        There are literally dozens of lines worth of information!</p>
+
+      </div>
+
+      <div class="sectionheader">
+        <p>Why You Should Hire Me</p>
+      </div>
+
+      <div class="intro">
+        <p>Over the last several years, I have worked as an engineer/developer for a small software company.
+        During this time, I learned how to program in several languages, for an array of applications
+        (see the <a href="{% url 'mainapp:list' %}">About Me</a> section for more details).
+        This relatively (extremely) modest website was built by me from the ground up, with an assist from Bootstrap,
+        using as many relevant aspects of Full Stack Development as possible.  A link to this site's
+        the source code, stored on GitHub, can be found <a href="{% url 'mainapp:documents' %}">here</a>.
+        About the only thing I couldn't find a great use for on this particular site was jQuery/Javascript,
+        so as an excuse to use them both, I created the random "Inspirational Quote Generator" you can see below.  Enjoy!</p>
+      </div>
+    </div>
+  </div>
+
 
 {% endblock %}
 
