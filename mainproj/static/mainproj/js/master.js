@@ -1,5 +1,11 @@
 var inspirebutton = $('.btn-default')
+
 var quotetext = $('.quote')
+var quotetop = quotetext.offset().top
+var quoteheight=quotetext.height()
+var viewheight=$(window).height()
+var scrollIt = quotetop - ((viewheight - quoteheight) / 2)
+
 var numlist = []
 var numquotes = 21
 var randnum = 1
@@ -27,7 +33,8 @@ inspirebutton.on('click',function()
     }
 
     quotetext.html(getQuote(randnum)).css(newCSS)
-    window.scrollTo(0,100000)
+    $(window).scrollTop(scrollIt)
+    // window.scrollTo($(window).width()/2,$(window).height())
   }
 )
 
