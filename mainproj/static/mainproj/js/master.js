@@ -1,8 +1,9 @@
 var inspirebutton = $('.btn-default')
 var quotetext = $('.quote')
 var numlist = []
-var numquotes = 18
+var numquotes = 21
 var randnum = 1
+var rstring=""
 
 var newCSS = {
   'font-style':'italic',
@@ -25,7 +26,7 @@ inspirebutton.on('click',function()
       numlist=[]
     }
 
-    quotetext.text(getQuote(randnum)).css(newCSS)
+    quotetext.html(getQuote(randnum)).css(newCSS)
     window.scrollTo(0,100000)
   }
 )
@@ -38,7 +39,8 @@ function getQuote(randnum)
     case 1:
       return "Character is built through adversity."
     case 2:
-      return "You don’t always need a plan.  Sometimes you just need to breathe, trust, let go, and see what happens."
+      return "You don’t always need a plan.  Sometimes you just need to breathe, trust, let go, and see what happens.  " +
+      "(Neither this website nor its non-existent subsidiaries are liable for what happens)"
     case 3:
       return "Go past the max!  Reach over the top!"
     case 4:
@@ -70,8 +72,14 @@ function getQuote(randnum)
     case 16:
       return "Nobody exists on purpose, nobody belongs anywhere, everybody's gonna die. Please hire me :)"
     case 17:
-      return "Just remember, win or lose… those are the two options:  WIN... or lose."
+      return "Just remember, win or lose… those are the two options:<br>WIN... or lose."
     case 18:
       return "This website is pretty wonderful, isn't it????"
+    case 19:
+      return "If you put your mind to it, you can accomplish anything."
+    case 20:
+      return "2:40<br>2,2,1"
+    case 21:
+      return "Inside you is the potential to make yourself better, and that is what it is to be human.  To make yourself more than you are."
   }
 }
