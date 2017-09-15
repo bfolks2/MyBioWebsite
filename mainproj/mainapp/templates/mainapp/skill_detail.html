@@ -3,5 +3,9 @@
   <h2 class="descheader">{{skill_detail.name}}</h2>
   <div class="descbody">
     <p>{{skill_detail.description}}</p>
+    {% if skill_detail.name == 'Python' or skill_detail.name == 'Django' %}
+      <p>I have also developed another website <a href="http://bfolks2.pythonanywhere.com/">here</a>, which is focused <em>much</em> more heavily
+      on Python/Django functionality.</p>
+    {% endif %}
   </div>
 {% endblock %}
