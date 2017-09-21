@@ -97,6 +97,11 @@
   font-weight: bolder;
 }
 
+.newsite{
+  font-weight: 900;
+  font-size: 1.05em;
+}
+
 .intro{
   font-size: 1.25em;
 }
