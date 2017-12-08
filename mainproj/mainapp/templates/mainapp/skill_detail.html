@@ -4,8 +4,15 @@
   <div class="descbody">
     <p>{{skill_detail.description}}</p>
     {% if skill_detail.name == 'Python' or skill_detail.name == 'Django' %}
-      <p>I have also developed another website <a href="http://bfolks2.pythonanywhere.com/">here</a>, which is focused <em>much</em> more heavily
-      on Python/Django functionality.</p>
+      <p>
+        I have also developed another website <a href="http://bfolks2.pythonanywhere.com/">here</a>,
+        which is focused <em>much</em> more heavily on Python/Django functionality.
+      </p>
+    {% endif %}
+    {% if skill_detail.name == 'jQuery/Javascript' %}
+      <p>I am also currently using AngularJS to develop a SPA, stored on my GitHub
+        <a href="https://github.com/bfolks2/Django-Angular-Aviation-Info-Site-External-API">here</a>,
+      </p>
     {% endif %}
   </div>
 {% endblock %}
