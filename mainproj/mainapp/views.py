@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from mainapp import models
+from . import models
 from django.views import generic
-from django.templatetags.static import static
 
 # Create your views here.
 

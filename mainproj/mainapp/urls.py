@@ -1,8 +1,7 @@
 from django.conf.urls import url
-from django.contrib import admin
-from mainapp import views
+from . import views
 
-app_name='mainapp'
+app_name = 'mainapp'
 
 urlpatterns=[
     url(r'^$',views.SkillList.as_view(),name='list'),

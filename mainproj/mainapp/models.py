@@ -1,5 +1,5 @@
 from django.db import models
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.utils.text import slugify #remove any characters that are not alphanuermica, /'s, or -'s
 
 # Create your models here.

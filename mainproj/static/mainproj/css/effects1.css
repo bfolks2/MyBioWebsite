@@ -3,7 +3,8 @@
 }
 
 .title{
-  font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .jumbotron{
@@ -38,8 +39,9 @@
 }
 
 .startsection{
-  padding-top: 25px;
-  padding-bottom: 50px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 
 .img-circle{
@@ -63,7 +65,7 @@
 }
 
 .padding{
-  text-align: center;
+  /*text-align: center;*/
   padding-left: 3.0em;
   padding-right: 3.0em;
 }
@@ -93,6 +95,7 @@
 }
 
 .sectionheader{
+  text-align: center;
   font-size: 1.5em;
   font-weight: bolder;
 }
@@ -130,7 +133,8 @@
 }
 
 .footer{
-  background: linear-gradient(#e3e8ed,#81a3db)
+    text-align: center;
+    background: linear-gradient(#e3e8ed,#81a3db)
 }
 
 .copyright{

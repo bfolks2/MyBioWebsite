@@ -12,10 +12,10 @@
       and then creating a solution for it within the same week or even day.</p>
   </div> -->
 
-  <h3><strong>Full Stack Python Skills:</strong></h3>
+  <h3><strong>Primary Technical Skills:</strong></h3>
     <ul>
       {% for skill in skills %}
-        {% if not skill.pro %}
+        {% if skill.pro %}
         <div class="listitem">
           <li><p><a href="{% url 'mainapp:details' slug=skill.slug %}">{{skill.name}}</a></p></li>
         </div>
@@ -25,7 +25,7 @@
   <h3><strong>Other Experience:</strong></h3>
   <ul>
     {% for skill in skills %}
-      {% if skill.pro %}
+      {% if not skill.pro %}
       <div class="listitem">
         <li><p><a href="{% url 'mainapp:details' slug=skill.slug %}">{{skill.name}}</a></p></li>
       </div>
