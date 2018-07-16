@@ -5,13 +5,14 @@
     <p>{{skill_detail.description}}</p>
     {% if skill_detail.name == 'Python' or skill_detail.name == 'Django' %}
       <p>
-        I have also developed another website <a href="http://bfolks2.pythonanywhere.com/">here</a>,
-        which is focused <em>much</em> more heavily on Python/Django functionality.
+        I have also developed <a href="http://bfolks2.pythonanywhere.com/">another website</a>, which is focused more
+        heavily on Python/Django functionality, as well as Django Rest Framework and Ember.js.
       </p>
     {% endif %}
-    {% if skill_detail.name == 'jQuery/Javascript' %}
-      <p>I am also currently using AngularJS to develop a SPA, stored on my GitHub
-        <a href="https://github.com/bfolks2/Django-Angular-Aviation-Info-Site-External-API">here</a>,
+    {% if skill_detail.slug == 'emberjs' %}
+      <p>
+        Also, in my spare time, I created another <a href="http://bfolks2.pythonanywhere.com/">DRF/Ember.js application</a>
+        that displays real-time aviation information.
       </p>
     {% endif %}
   </div>
