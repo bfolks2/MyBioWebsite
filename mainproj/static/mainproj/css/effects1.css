@@ -34,7 +34,7 @@
   background-color: #bdbfc1;
 }
 
-.fa{
+.fa, .glyphicon-plane{
   font-size: 25px;
 }
 
@@ -86,11 +86,11 @@
   background-color: #e3e8ed;
 }
 
-.glyphicon{
+.glyphicon-home{
   color: #f9f493;
 }
 
-.glyphicon:hover{
+.glyphicon-home:hover{
   color: #c4bf97;
 }
 
