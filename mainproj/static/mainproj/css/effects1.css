@@ -163,3 +163,13 @@ body{
   background-color: #f9f9f9;
   padding-top: 100px;
 }
+
+.skill-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.embedded-pdf {
+  text-align: center;
+}

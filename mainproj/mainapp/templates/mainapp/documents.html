@@ -1,30 +1,25 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
-  <h2 class="document">Documentation</h2>
 
-{#  <div class="col-md-4 col-xs-12">#}
-{#    <a href="https://github.com/bfolks2/MyBioWebsite" class="thumbnail">#}
-{#      <img src="{% static 'mainproj/misc/thumbnail.jpg' %}" alt="Source Code">#}
-{#    </a>#}
-{#  </div>#}
+  <div class="document-holder">
+    <div class="skill-icon col-md-4 col-xs-12">
+      <a href="{% url 'mainapp:resume-pdf' %}" class="thumbnail">
+        <img src="{% static 'mainproj/misc/thumbnail1.jpg' %}" alt="Resume Viewer">
+      </a>
+    </div>
 
-  <div class="col-md-4 col-xs-12">
-    <a href="{% url 'mainapp:resume-pdf' %}" class="thumbnail">
-      <img src="{% static 'mainproj/misc/thumbnail1.jpg' %}" alt="Resume Viewer">
-    </a>
-  </div>
+    <div class="skill-icon col-md-4 col-xs-12">
+      <a href="{% url 'mainapp:sw-pdf' %}" class="thumbnail">
+        <img src="{% static 'mainproj/misc/solidworkslogo.jpeg' %}" alt="SolidWorks Certifcate Viewer">
+      </a>
+    </div>
 
-  <div class="col-md-4 col-xs-12">
-    <a href="{% url 'mainapp:sw-pdf' %}" class="thumbnail">
-      <img src="{% static 'mainproj/misc/solidworkslogo.jpeg' %}" alt="SolidWorks Certifcate Viewer">
-    </a>
-  </div>
-
-  <div class="col-md-4 col-xs-12">
-    <a href="{% url 'mainapp:scrum-pdf' %}" class="thumbnail">
-      <img src="{% static 'mainproj/misc/scrumlogo.png' %}" alt="Scrum Certificate Viewer">
-    </a>
+    <div class="skill-icon col-md-4 col-xs-12">
+      <a href="{% url 'mainapp:scrum-pdf' %}" class="thumbnail">
+        <img src="{% static 'mainproj/misc/scrumlogo.png' %}" alt="Scrum Certificate Viewer">
+      </a>
+    </div>
   </div>
 
 {% endblock %}

@@ -20,6 +20,7 @@ def solidworks_pdfview(request):
 def scrum_pdfview(request):
     return render(request, 'mainapp/scrum.html')
 
+
 class Documents(generic.TemplateView):
     template_name='mainapp/documents.html'
 
