@@ -181,10 +181,10 @@ body{
   text-decoration: underline;
 }
 
-#slideshow-anchor {
-  height: 90px; /*same height as header*/
-  margin-top: -90px; /*same height as header*/
-}
+/*#slideshow-anchor {*/
+  /*height: 90px; !*same height as header*!*/
+  /*margin-top: -90px; !*same height as header*!*/
+/*}*/
 
 .slideshow-top {
   border-top: 1px solid gray;
