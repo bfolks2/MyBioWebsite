@@ -133,8 +133,10 @@
 }
 
 .footer{
-    text-align: center;
-    background: linear-gradient(#e3e8ed,#81a3db)
+  text-align: center;
+  background-color: #253247;
+  /*background: linear-gradient(#e3e8ed,#81a3db)*/
+  color: white;
 }
 
 .copyright{
@@ -161,7 +163,6 @@
 body{
   font-family: 'Open Sans',sans-serif;
   background-color: #f9f9f9;
-  padding-top: 100px;
 }
 
 .skill-icon {
@@ -227,7 +228,7 @@ body{
   background-color: #af1005;
   color: white;
   font-weight: bold;
-  width: 12rem;
+  width: 14rem;
   height: 4rem;
   border-radius: 5%;
 }
