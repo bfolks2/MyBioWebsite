@@ -57,38 +57,73 @@
 
       <div class="intro">
 
-        <p>Nowadays, in the era of Facebook, Instagram, and LinkedIn, there is no shortage of personal profile sites that can
-        be found online.  At times, it seems as though an unending pestilence of them are mercilessly being spewed across the World Wide Web.
-        In a poetic sort of irony, each profile is built by someone who, in a futile attempt to separate him/herself from the rest of the pack,
-        ends up creating the same brand of content as everyone else.  A grim state of affairs indeed...</p>
-
-        <p>This website, of course, will be no exception!!! </p>
-
-        <p>It is my own attempt to cram one more self-congratulatory bio page into the Internet's already bloated warehouse
-        of contrived personal profiles.  So feel free to look around at this site's <em>vast</em> array of content.
-        There are literally dozens of lines worth of information!</p>
-
-      </div>
-
-      <div class="sectionheader">
-        <p>Sorry For The Mess</p>
-      </div>
-
-      <div class="intro">
         <p>
-            This relatively (extremely) modest website was built by me from the ground up. It is the very first
-            website I ever created, and it needs somewhat of a code overhaul.  However, at the moment I'm too busy
-            pursuing other more interesting projects
-            (<a href="http://bfolks2.pythonanywhere.com/" target="_blank">like this aviation site here</a> or
-            <a href="https://adthrill-prod.herokuapp.com/" target="_blank">this startup here</a>),
-            as well as world domination, so this setup will have to suffice.
-            <br></br>
-            Over the last several years, I have been working as an engineer/developer for multiple companies of varying
-            size. During this time, I have programmed in several languages for an array of applications
-            (see the <a href="{% url 'mainapp:documents' %}">Resume</a> sections for more details).  As an excuse to
-            add a touch of front-end JavaScript to this site, I created the random "Inspirational Quote Generator" you
-            can see below.  Enjoy!
+          Nowadays, in the era of Facebook, Instagram, and LinkedIn, there is no shortage of personal profile sites that can
+          be found online.  At times, it seems as though an unending pestilence of them are mercilessly being spewed across the World Wide Web.
+          In a poetic sort of irony, each profile is built by someone who, in a futile attempt to separate him/herself from the rest of the pack,
+          ends up creating the same brand of content as everyone else.  A grim state of affairs indeed...
         </p>
+
+        <p>
+          This website, of course, will be no exception!!!  It is my own attempt to cram one more self-congratulatory
+          bio page into the Internet's already bloated warehouse of contrived personal profiles.
+        </p>
+
+        <p>
+          So feel free to page through my short <span class="important-bio-text"><a href="#slideshow-anchor">slideshow</a></span> below.
+          It gives a (very) brief overview of my professional work experience, as well as a few hobbies/projects I have
+          been working on outside of my full-time job.  Also, you can check out my aviation/flight planning website live
+          <span class="important-bio-text"><a href="http://bfolks2.pythonanywhere.com/" target="_blank">here</a></span>
+          (or by clicking on the tiny airplane logo in the navbar), which is another small side project I have put together.
+          Lastly, go to the <span class="important-bio-text"><a href="{% url 'mainapp:documents' %}">Documentation</a></span>
+          section of this site for my Resume and Certifications.
+        </p>
+
+      </div>
+
+      <div class="sectionheader slideshow-top">
+        <p>Ben Folks:  The Slideshow</p>
+      </div>
+
+      <div id="slideshow-anchor"></div>
+
+      <div class="slideshow-area">
+        <div id="slide-page-1" class="slide-page initial-inline">
+          <img src="{% static 'mainproj/misc/slideshow/summary.png' %}" alt="">
+        </div>
+        <div id="slide-page-2" class="slide-page initial-none">
+          <img src="{% static 'mainproj/misc/slideshow/esprit.png' %}" alt="">
+        </div>
+        <div id="slide-page-3" class="slide-page initial-none">
+          <img src="{% static 'mainproj/misc/slideshow/redshelf.png' %}" alt="">
+        </div>
+        <div id="slide-page-4" class="slide-page initial-none">
+          <img src="{% static 'mainproj/misc/slideshow/adthrill1.png' %}" alt="">
+        </div>
+        <div id="slide-page-5" class="slide-page initial-none">
+          <img src="{% static 'mainproj/misc/slideshow/adthrill2.png' %}" alt="">
+        </div>
+        <div id="slide-page-6" class="slide-page initial-none">
+          <img src="{% static 'mainproj/misc/slideshow/adthrill3.png' %}" alt="">
+        </div>
+        <div id="slide-page-7" class="slide-page initial-none">
+          <img src="{% static 'mainproj/misc/slideshow/adthrill4.png' %}" alt="">
+        </div>
+        <div id="slide-page-8" class="slide-page initial-none">
+          <img src="{% static 'mainproj/misc/slideshow/adthrill5.png' %}" alt="">
+        </div>
+        <div id="slide-page-9" class="slide-page initial-none">
+          <img src="{% static 'mainproj/misc/slideshow/pilot.png' %}" alt="">
+        </div>
+      </div>
+
+      <div class="slideshow-buttons">
+        <div id="prev-container">
+            <button id="prev-button" class="page-button" onclick="prevPage()" disabled><<< Previous</button>
+        </div>
+        <div id="next-container">
+            <button id="next-button" class="page-button" onclick="nextPage()">Next >>></button>
+        </div>
       </div>
 
     </div>
@@ -101,11 +136,11 @@
 
   <div class="footer">
     <div class="container padding">
-      <div class="inspire">
-        <button class="btn btn-default" type="button">Insta-Inspiration</button>
-      </div>
+      <!--<div class="inspire">-->
+        <!--<button class="btn btn-default" type="button">Insta-Inspiration</button>-->
+      <!--</div>-->
 
-      <h3 class="quote">-Click the button above to be inspired-</h3>
+      <!--<h3 class="quote">-Click the button above to be inspired-</h3>-->
 
       <div class="copyright">
         <p>© 2019 <br>

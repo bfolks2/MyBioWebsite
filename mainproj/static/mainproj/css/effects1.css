@@ -173,3 +173,71 @@ body{
 .embedded-pdf {
   text-align: center;
 }
+
+.important-bio-text {
+  font-size: large;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#slideshow-anchor {
+  height: 90px; /*same height as header*/
+  margin-top: -90px; /*same height as header*/
+}
+
+.slideshow-top {
+  border-top: 1px solid gray;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.slideshow-area {
+  background-color: white;
+  border: 1px solid black;
+  height: 40rem;
+  margin: 2rem 15% 1rem 15%;
+  text-align: center;
+  width: 70%;
+}
+
+.slideshow-area img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.slideshow-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.initial-inline {
+  display: inline;
+}
+
+.initial-none {
+  display: none;
+}
+
+#prev-button {
+  margin-right: 2rem;
+}
+
+.page-button{
+  background-color: #af1005;
+  color: white;
+  font-weight: bold;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 5%;
+}
+
+.page-button:hover{
+  background-color: #fafafa;
+  color: black;
+}
+
+.page-button:disabled {
+  background-color: lightgray;
+  color: gray;
+}
