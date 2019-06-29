@@ -223,7 +223,7 @@ body{
   margin-right: 2rem;
 }
 
-.page-button{
+.page-button, .page-button:focus {
   background-color: #af1005;
   color: white;
   font-weight: bold;
