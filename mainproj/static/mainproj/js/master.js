@@ -92,7 +92,7 @@
 //}
 
 var pageNumber = 1;
-var totalPages = 10;
+var totalPages = 7;
 var nextButton = $('#next-button');
 var prevButton = $('#prev-button');
 
