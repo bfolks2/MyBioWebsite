@@ -237,3 +237,7 @@ body{
   background-color: lightgray;
   color: gray;
 }
+
+.inline-bold {
+  font-weight: 900;
+}
