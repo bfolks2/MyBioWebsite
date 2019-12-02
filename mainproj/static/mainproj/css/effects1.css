@@ -4,7 +4,19 @@
 
 .title{
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
+}
+
+.spaceballs {
+    transform: perspective(300px) rotateX(15deg);
+    transform-origin: 50% 100%;
+    font-family: Impact, Charcoal, 'sans serif';
+}
+
+.ben-folks {
+    font-size: 5rem;
+}
+.the-website{
+    margin-top: 1rem;
 }
 
 .jumbotron{
