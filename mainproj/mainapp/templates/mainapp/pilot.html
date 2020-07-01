@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+  <div class="embedded-pdf">
+    <embed src="{% static 'mainproj/misc/BenFolks_PilotLicense.pdf' %}" width="800px" height="800px"/>
+  </div>
+{% endblock %}

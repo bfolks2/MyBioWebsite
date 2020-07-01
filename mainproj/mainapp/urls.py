@@ -8,6 +8,7 @@ urlpatterns=[
     url(r'^details/(?P<slug>[-\w]+)/$',views.SkillDetail.as_view(),name='details'),
     url(r'^experience/$',views.Documents.as_view(),name='documents'),
     url(r'^resume/$', views.resume_pdfview, name='resume-pdf'),
+    url(r'^pilot/$', views.pilot_pdfview, name='pilot-pdf'),
     url(r'^scrum/$', views.scrum_pdfview, name='scrum-pdf'),
     url(r'^solidworks/$', views.solidworks_pdfview, name='sw-pdf'),
 ]

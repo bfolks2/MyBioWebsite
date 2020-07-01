@@ -13,6 +13,10 @@ def resume_pdfview(request):
     return render(request, 'mainapp/resume.html')
 
 
+def pilot_pdfview(request):
+    return render(request, 'mainapp/pilot.html')
+
+
 def solidworks_pdfview(request):
     return render(request, 'mainapp/solidworks.html')
 
